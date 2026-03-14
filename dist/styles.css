@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f3f6fb;
+    color: #1a2639;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    padding: 2rem 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px -10px rgba(0,20,40,0.15);
+    overflow: hidden;
+    padding: 2.8rem 2.5rem;
+}
+
+/* tipografia */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #0b1e33;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    border-bottom: 4px solid #d0e2f2;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    color: #0b2b4a;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #1e3a5f;
+}
+
+.subtitulo-principal {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #2c4c73;
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid #3a7ca5;
+    padding-left: 1.2rem;
+    background: #eef5fa;
+    padding: 0.9rem 1.5rem;
+    border-radius: 60px;
+}
+
+/* seções */
+section {
+    margin: 3.5rem 0;
+}
+
+section:first-of-type {
+    margin-top: 1rem;
+}
+section:last-of-type {
+    margin-bottom: 1rem;
+}
+
+/* cards de projetos */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background: #f9fcff;
+    border-radius: 1.5rem;
+    padding: 1.8rem 1.8rem 2rem 1.8rem;
+    box-shadow: 0 5px 18px rgba(0, 32, 64, 0.08);
+    border: 1px solid #e3edf5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(20, 60, 120, 0.12);
+    border-color: #b8d1e5;
+}
+
+.card i {
+    font-size: 2.4rem;
+    color: #1f6390;
+    margin-bottom: 1.2rem;
+}
+
+.card h4 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #103450;
+}
+
+.card .tag {
+    display: inline-block;
+    background: #dbeafe;
+    color: #03538c;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    margin: 0.8rem 0 1rem 0;
+    letter-spacing: 0.3px;
+}
+
+.card p {
+    color: #25475f;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.card .tech-hint {
+    font-size: 0.9rem;
+    color: #537a9a;
+    border-top: 1px dashed #cbdae6;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* sobre estilo */
+.sobre-texto {
+    font-size: 1.2rem;
+    max-width: 850px;
+    background: #ecf3fa;
+    border-radius: 2rem;
+    padding: 2rem 2.2rem;
+    color: #0d2d46;
+    box-shadow: inset 0 1px 4px rgba(255,255,255,0.8), 0 6px 12px rgba(0,20,50,0.05);
+}
+
+.sobre-texto p {
+    margin-bottom: 1rem;
+}
+
+.sobre-texto strong {
+    color: #0b4770;
+    font-weight: 700;
+}
+
+.destaque-ano {
+    background: #ffffffb3;
+    border-radius: 50px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 0.5rem;
+    border: 1px solid #b3cfe5;
+}
+
+/* contato */
+.contato-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.8rem;
+    background: linear-gradient(145deg, #f0f7fd, #ffffff);
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid #c6deef;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 0.8rem 2rem 0.8rem 1.2rem;
+    border-radius: 60px;
+    box-shadow: 0 3px 10px rgba(0,40,70,0.08);
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+
+.contato-item:hover {
+    border-color: #679bbf;
+    background: #f4fbff;
+    transform: scale(1.02);
+}
+
+.contato-item i {
+    font-size: 1.8rem;
+    color: #1b5a8c;
+    width: 2rem;
+    text-align: center;
+}
+
+.contato-item a, .contato-item span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #103450;
+    text-decoration: none;
+}
+
+.contato-item a:hover {
+    text-decoration: underline;
+    color: #0d3d62;
+}
+
+.email-link {
+    background: #1f6390;
+    color: white !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 40px;
+    margin-left: 0.3rem;
+    font-weight: 600;
+}
+
+.email-link i {
+    color: white;
+}
+
+/* header e footer */
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.cabecalho-nome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.badge-exp {
+    background: #13324b;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    border: 2px solid white;
+    box-shadow: 0 4px 10px rgba(0,40,70,0.2);
+}
+
+.nav-rapida {
+    margin-top: 1.8rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-rapida a {
+    background: white;
+    padding: 0.6rem 1.8rem;
+    border-radius: 40px;
+    font-weight: 500;
+    color: #1d4a72;
+    text-decoration: none;
+    border: 1px solid #bfd8ec;
+    transition: 0.15s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.nav-rapida a:hover {
+    background: #dbeafe;
+    border-color: #3a7ca5;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, #b8d6f0, transparent);
+    margin: 2rem 0 0.5rem 0;
+}
+
+.footer-note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #567e9f;
+    font-size: 0.95rem;
+    margin-top: 2.2rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #d3e4f2;
+}
+
+/* responsividade */
+@media (max-width: 700px) {
+    .container {
+        padding: 1.8rem 1.2rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .cabecalho-nome {
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+    .contato-item {
+        width: 100%;
+    }
+    .sobre-texto {
+        padding: 1.5rem;
+    }
+}

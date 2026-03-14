@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Godoy · Currículo Dev Full Stack</title>
+    <!-- Fonte moderna e ícones simples (Font Awesome via CDN) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/dist/styles.css">
+</head>
+<body>
+<div class="container">
+    <!-- Cabeçalho principal com nome e experiência -->
+    <header class="cabecalho">
+        <div class="cabecalho-nome">
+            <div>
+                <h1>Ricardo Godoy</h1>
+                <div class="subtitulo-principal">
+                    <i class="fas fa-code" style="margin-right: 10px;"></i> Desenvolvedor Full Stack · 20 anos de experiência
+                </div>
+            </div>
+            <span class="badge-exp"><i class="fas fa-briefcase"></i> desde 2004</span>
+        </div>
+        
+        <!-- pequena navegação interna (âncoras) -->
+        <div class="nav-rapida">
+            <a href="#sobre"><i class="fas fa-user"></i> Sobre</a>
+            <a href="#projetos"><i class="fas fa-laptop-code"></i> Projetos</a>
+            <a href="#contato"><i class="fas fa-paper-plane"></i> Contato</a>
+        </div>
+    </header>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre">
+        <h2><i class="fas fa-smile-wink" style="margin-right: 12px;"></i> Sobre mim</h2>
+        <div class="sobre-texto">
+            <p><strong>Olá, sou Ricardo Godoy</strong> — desenvolvedor full stack com <strong>20 anos de estrada</strong>, apaixonado por arquitetura de software, desafios matemáticos aplicados e otimização de ferramentas para games. Minha trajetória inclui desde sistemas corporativos e aplicações web modernas com React, Node.js e bancos SQL/NoSQL. </p>
+            <p>Nos últimos anos, mergulhei no universo de ferramentas para produtividade em desenvolvimento de jogos (Unity). Acredito em código limpo, documentação objetiva e em compartilhar conhecimento.</p>
+            <p><i class="fas fa-check-circle" style="color: #1f6390;"></i> <strong>Formação:</strong> Ciência da Computação (Anhanguera Educacional). <br>
+            <span class="destaque-ano"><i class="far fa-calendar-alt"></i> 20+ anos construindo soluções digitais</span></p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PROJETOS (destaque para os dois citados) -->
+    <section id="projetos">
+        <h2><i class="fas fa-cubes" style="margin-right: 12px;"></i> Projetos em destaque</h2>
+        <div class="projetos-grid">
+            <!-- SuperMathFan -->
+            <div class="card">
+                <i class="fas fa-square-root-alt"></i>
+                <h4>SuperMathFan</h4>
+                <span class="tag">Cálculo numérico · Faculdade</span>
+                <p>Ferramenta interativa para resolver <strong>sistemas lineares</strong>. Desenvolvido como trabalho da disciplina de Cálculo na faculdade.</p>
+                <div class="tech-hint">
+                    <i class="fas fa-code-branch"></i> hTML · JavaScript
+                </div>
+            </div>
+            <!-- HierarchySeparator -->
+            <div class="card">
+                <i class="fas fa-sitemap"></i>
+                <h4>HierarchySeparator</h4>
+                <span class="tag">Unity Editor tool</span>
+                <p>Editor extension para Unity que adiciona <strong>separadores visuais na hierarquia</strong>. Organiza cenas complexas com categorias personalizáveis.</p>
+                <div class="tech-hint">
+                    <i class="fas fa-gamepad"></i> C# · Unity Editor API · Open Source
+                </div>
+            </div>
+            <!-- projeto extra (opcional para equilíbrio) -->
+            <div class="card" style="background: #ecf3fa;">
+                <i class="fas fa-globe"></i>
+                <h4>Outras contribuições</h4>
+                <span class="tag">full stack · opensource</span>
+                <p>Participei de mais de 30 projetos, incluindo ERPs, dashboards analytics e plugins para Unity.</p>
+                <div class="tech-hint">
+                    <i class="fab fa-react"></i> React · Node · C# · SQL
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO (com ícones e meios diretos) -->
+    <section id="contato">
+        <h2><i class="fas fa-address-card" style="margin-right: 10px;"></i> Contato</h2>
+        <div class="contato-links">
+            <div class="contato-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:ricardo.godoy@dev.fullstack" class="email-link">contato@ricardogodoy.dev</a>
+                <span style="font-size:0.9rem; color:#507e9c;">(principal)</span>
+            </div>
+            <div class="contato-item">
+                <i class="fab fa-linkedin"></i>
+                <a href="#">linkedin.com/in/ricardo-godoy-7a74b5235</a>
+            </div>
+            <div class="contato-item">
+                <i class="fab fa-github"></i>
+                <a href="#">github.com/RicardoQLG</a>
+            </div>
+        </div>
+        <p style="margin-top: 1.5rem; background: #e3f0fa; padding: 0.8rem 2rem; border-radius: 40px; display: inline-block;">
+            <i class="fas fa-star" style="color: #daa520;"></i> Disponível para oportunidades como full stack ou consultorias.
+        </p>
+    </section>
+
+    <!-- rodapé simples com âncoras -->
+    <hr>
+    <footer class="footer-note">
+        <span><i class="far fa-copyright"></i> 2025 Ricardo Godoy — currículo online</span>
+        <span>
+            <a href="#sobre" style="color:#2b5f86; text-decoration: none; margin:0 5px;">Sobre</a> · 
+            <a href="#projetos" style="color:#2b5f86; text-decoration: none; margin:0 5px;">Projetos</a> · 
+            <a href="#contato" style="color:#2b5f86; text-decoration: none; margin:0 5px;">Contato</a>
+        </span>
+    </footer>
+</div>
+
+<!-- pequeno aviso sutil de contato direto (opcional) -->
+<div style="text-align: center; margin-top: 1rem; font-size:0.9rem; color: #57809c;">
+    <i class="fas fa-mouse-pointer"></i> Navegue pelas seções — currículo dev full stack
+</div>
+</body>
+</html>
